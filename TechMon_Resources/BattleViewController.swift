@@ -102,7 +102,7 @@ class BattleViewController: UIViewController {
             TechDraUtil.playSE(fileName: "SE_gameover")
             finishedMessage = "プレイヤーの敗北..."
         }
-        let alert = UIAlertController(title: "バトル終了！", message: finishedMessage, preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "バトル終了！", message: finishedMessage, preferredStyle: UIAlertController.Style.alert)
         let action = UIAlertAction(title: "OK", style: .default, handler: { action in
             //OKを押すと、モーダルを消してLobbyViewControllerに戻る
             self.dismiss(animated: true, completion: nil)
